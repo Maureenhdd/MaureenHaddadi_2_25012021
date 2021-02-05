@@ -4,16 +4,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+
     <title>Reservia</title>
 </head>
 
 <body>
-    <h1>Bonjour</h1>
-    <p>coucou</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit nesciunt consequuntur unde explicabo voluptas,
-        similique sapiente architecto quos veniam laborum molestias, animi nulla eveniet praesentium deleniti. Expedita
-        adipisci nemo eius!</p>
+    <div class="container">
+        <nav class="navbar">
+            <div class="navbar_left">
+                <img src="assets/img/Reservia.svg" class="navbar_logo" alt="logo">
+            </div>
 
+            <div class="navbar_right">
+                <ul class="navbar_right_link ">
+                    <li class="navbar_right_link_li border_blue ">
+                        <a href="#" class="navbar_right_link_a blue">Hébergements<a>
+                    </li>
+                    <li class="navbar_right_link_li">
+                        <a href="#" class="navbar_right_link_a">Activités </a>
+                    </li>
+                </ul>
+                <ul class="navbar_right_link_login">
+                    <li class="navbar_right_link_li">
+                        <a href="#" class="navbar_right_link_a blue">S'inscrire </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text_block">
+            <h1 class="text_block_title">Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p class="text_block_p">En plein centre ville ou en pleine nature</p>
+        </div>
+
+        <div class="search_block">
+            <i class="fas fa-map-marker-alt search_i"></i>
+            <input type="search" class="search_input" placeholder="Marseille, France">
+            <button type="submit" class="search_btn">Rechercher</button>
+            <button type="submit" class="search_btn responsive"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="filter_block">
+            <h3 class="filter_title">Filtres</h3>
+            <div class="filter_content">
+                <i class="fas fa-money-bill-wave filter_i"></i>
+                Economique
+            </div>
+            <div class="filter_content">
+                <i class="fas fa-child filter_i"></i>
+                Familial
+            </div>
+            <div class="filter_content">
+                <i class="fas fa-heart filter_i"></i>
+                Romantique
+            </div>
+            <div class="filter_content">
+                <i class="fas fa-dog filter_i"></i>
+                Animaux autorisés
+            </div>
+        </div>
+        <div class="block_info">
+            <i class="fas fa-info info_i"></i>
+            Plus de 500 logements sont disponibles dans cette ville
+        </div>
+        <div class="block_houses">
+            <section class="houses">
+                <h3 class="houses_title">Hébergement à Marseille</h3>
+                <div class="houses_list">
+                    <div class="houses_list_card">
+                        <img class="houses_card_img" src="assets/img/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                        <h4 class="houses_card_title">Auberge de la Cannobière</h4>
+                        <p class="houses_card_text">Nuit à partir de 25€</p>
+                        <div class="rating">
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star grey rating_i"></i>
+                        </div>
+                    </div>
+                    <div class="houses_list_card">
+                        <img class="houses_card_img" src="assets/img/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
+                        <h4 class="houses_card_title">Hôtel du port</h4>
+                        <p class="houses_card_text">Nuit à partir de 52€</p>
+                        <div class="rating">
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                        </div>
+                    </div>
+                    <div class="houses_list_card">
+                        <img class="houses_card_img" src="assets/img/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
+                        <h4 class="houses_card_title">Hôtel Les mouettes</h4>
+                        <p class="houses_card_text">Nuit à partir de 76€</p>
+                        <div class="rating">
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star grey rating_i"></i>
+                        </div>
+                    </div>
+                    <div class="houses_list_card">
+                        <img class="houses_card_img" src="assets/img/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
+                        <h4 class="houses_card_title">Hôtel de la mer</h4>
+                        <p class="houses_card_text">Nuit à partir de 40€</p>
+                        <div class="rating">
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star grey rating_i"></i>
+                            <i class="fas fa-star grey rating_i"></i>
+                        </div>
+                    </div>
+                    <div class="houses_list_card">
+                        <img class="houses_card_img" src="assets/img/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
+                        <h4 class="houses_card_title">Auberge Le Panier</h4>
+                        <p class="houses_card_text">Nuit à partir de 23€</p>
+                        <div class="rating">
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star grey rating_i"></i>
+                        </div>
+                    </div>
+                    <div class="houses_list_card">
+                        <img class="houses_card_img" src="assets/img/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
+                        <h4 class="houses_card_title">Hôtel chez Amina</h4>
+                        <p class="houses_card_text">Nuit à partir de 96€</p>
+                        <div class="rating">
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="more">Afficher plus</a>
+            </section>
+            <aside class="houses_pop">
+                <div class="houses_pop_top">
+                    <h3>Les plus populaires</h3>
+                    <i class="fas fa-chart-line houses_pop_top_i"></i>
+                </div>
+
+                <div class="houses_pop_card">
+                    <img class="houses_pop_card_img" src="assets/img/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
+                    <div class="houses_card_content">
+                        <div class="houses_card_content_top">
+                            <h4 class="houses_card_title">Hôtel Le soleil du matin</h4>
+                            <p class="houses_card_text">Nuit à partir de 128€</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="houses_pop_card">
+                    <img class="houses_pop_card_img" src="assets/img/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
+                    <div class="houses_card_content">
+                        <div class="houses_card_content_top">
+                            <h4 class="houses_card_title">Au coeur de l'eau Chambres d'hôtes</h4>
+                            <p class="houses_card_text">Nuit à partir de 71€</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star grey rating_i"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="houses_pop_card">
+                    <img class="houses_pop_card_img" src="assets/img/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
+                    <div class="houses_card_content">
+                        <div class="houses_card_content_top">
+                            <h4 class="houses_card_title">Hôtel Tout bleu et Blanc</h4>
+                            <p class="houses_card_text">Nuit à partir de 69€</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star blue rating_i"></i>
+                            <i class="fas fa-star grey rating_i"></i>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
 </body>
 
 </html>

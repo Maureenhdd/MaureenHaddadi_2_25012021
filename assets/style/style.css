@@ -1,3 +1,290 @@
-h1 {
-    color: pink
+* {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar_right_link,
+.navbar_right {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar_logo {
+  width: 100px;
+  padding-top: 20px;
+}
+
+.navbar_right_link,
+.navbar_right_link_login {
+  list-style: none;
+}
+
+.navbar_right_link_li {
+  padding: 20px;
+}
+
+.navbar_right_link_a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.blue {
+  color: #0065fc;
+  font-weight: 700;
+}
+
+.border_blue {
+  border-top: solid 2px #0065fc;
+}
+
+.text_block_title {
+  font-size: 20px;
+}
+.search_block {
+  display: flex;
+  margin: 25px 0;
+}
+.search_i {
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 15px 0 0 15px;
+}
+.search_input {
+  border: 1px solid #f2f2f2;
+  padding: 10px;
+  color: black;
+  font-weight: 700;
+  width: 20%;
+}
+
+.search_btn {
+  background: #0065fc;
+  border: none;
+  padding: 15px;
+  color: white;
+  font-weight: 700;
+  border-radius: 0 15px 15px 0;
+}
+.responsive {
+  display: none;
+}
+
+.filter_block {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.filter_content {
+  margin: 10px;
+  padding: 0 15px 0 0;
+  border: solid 2px #f2f2f2;
+  border-radius: 20px;
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+.filter_title {
+  margin: 0 15px 0 0;
+}
+
+.filter_i {
+  background-color: #deebff;
+  padding: 10px 13px;
+  border-radius: 50%;
+  color: #0065fc;
+  position: relative;
+  right: 12px;
+}
+
+.block_info {
+  margin: 30px 0;
+}
+
+.info_i {
+  color: #0065fc;
+  padding: 5px 10px;
+  border: solid 1px #deebff;
+  border-radius: 50%;
+}
+
+.block_houses {
+  display: flex;
+  justify-content: space-between;
+}
+
+.houses,
+.houses_pop {
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.houses {
+  width: 67%;
+}
+
+.houses_pop {
+  width: 25%;
+  padding: 20px;
+}
+.houses_list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 0 30px 0;
+}
+.houses_list_card {
+  width: 30%;
+  margin: 15px 0;
+  background: white;
+  padding: 5px 5px 10px 5px;
+  border-radius: 15px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.houses_card_img {
+  width: 100%;
+  object-fit: cover;
+  height: 95px;
+  border-radius: 10px 10px 0 0;
+}
+
+.houses_card_title {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.houses_card_text {
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+.houses_card_title,
+.houses_card_text,
+.rating {
+  padding-left: 8px;
+}
+
+.grey {
+  color: #f2f2f2;
+}
+
+.rating_i {
+  font-size: 12px;
+}
+
+.houses_title {
+  margin: 20px 0 0 20px;
+}
+.more {
+  text-decoration: none;
+  color: black;
+  margin: 20px;
+  font-weight: 700;
+}
+
+.houses_pop_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.houses_pop_top_i {
+  font-size: 20px;
+}
+
+.houses_pop_card {
+  background-color: white;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+  margin: 15px 0;
+  display: flex;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.houses_card_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.houses_pop_card_img {
+  width: 100px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+@media (max-width: 768px) {
+  .navbar,
+  .container {
+    width: 100%;
+  }
+  .navbar_right,
+  .block_houses {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .navbar_right_link {
+    justify-content: space-between;
+    padding-left: 0;
+  }
+
+  .navbar_right_link_li {
+    text-align: center;
+    width: 50%;
+  }
+  .navbar_right_link_login {
+    align-self: flex-end;
+  }
+  .navbar_left {
+    position: absolute;
+    display: block;
+    height: 60px;
+    left: 15px;
+    top: 15px;
+  }
+  .border_blue {
+    border-top: none;
+    border-bottom: solid 2px #0065fc;
+  }
+
+  .search_input {
+    width: 75%;
+  }
+  .search_btn {
+    display: none;
+  }
+  .responsive {
+    display: block;
+    border-radius: 15px;
+    position: absolute;
+    left: 80%;
+  }
+  .filter_title {
+    flex-basis: 100%;
+  }
+  .houses {
+    background-color: white;
+  }
+  .houses,
+  .houses_pop {
+    width: 100%;
+  }
+  .houses_list_card {
+    width: 100%;
+  }
 }
