@@ -99,6 +99,8 @@ body {
   font-weight: 700;
   padding-left: 10px;
   font-size: 15px;
+  background: white;
+  transition: 0.5s;
 }
 
 .filter_title {
@@ -112,6 +114,18 @@ body {
   color: #0065fc;
   position: relative;
   right: 12px;
+  transition: 0.5s;
+}
+
+.filter_content:hover .filter_i {
+  transform: rotate(360deg) scale(1.5);
+  background-color: #0065fc;
+  color: white;
+}
+
+.filter_content:hover {
+  background-color: #0065fc;
+  color: white;
 }
 
 .block_info {
@@ -154,14 +168,21 @@ body {
 }
 
 .houses_list_card {
+  text-decoration: none;
+  color: black;
   width: 30%;
   margin: 25px 0;
   background: white;
   padding: 5px 5px 10px 5px;
   border-radius: 15px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
 }
 
+.houses_list_card:hover {
+  color: #0065fc;
+  transform: scale(1.1);
+}
 .houses_card_img {
   width: 100%;
   object-fit: cover;
@@ -291,6 +312,9 @@ body {
   .houses_pop {
     width: 100%;
   }
+  .houses_list_card {
+    width: 40%;
+  }
   .houses_pop_bottom {
     display: flex;
     flex-wrap: wrap;
@@ -330,12 +354,11 @@ body {
     border-bottom: solid 2px #0065fc;
   }
   .search_block {
-    justify-content: center;
     margin: 50px 0;
   }
 
   .search_input {
-    width: 65%;
+    width: 80%;
   }
   .search_btn {
     display: none;
@@ -366,10 +389,13 @@ body {
 }
 
 @media (max-width: 576px) {
-  .search_input {
-    width: 80%;
+  .search_block {
+    justify-content: center;
   }
   .responsive {
     left: 85%;
+  }
+  .houses_list_card {
+    width: 100%;
   }
 }
