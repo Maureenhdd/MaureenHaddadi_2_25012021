@@ -335,6 +335,9 @@ input[type="search"] {
   .footer_content_block {
     margin: 15px 0;
   }
+  .search_input {
+    width: 80%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -373,9 +376,6 @@ input[type="search"] {
     margin: 50px 0;
   }
 
-  .search_input {
-    width: 80%;
-  }
   .search_btn {
     display: none;
   }
