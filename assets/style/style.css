@@ -400,8 +400,11 @@ a:hover {
   .search_block {
     justify-content: center;
   }
+  .search_input {
+    width: 100%;
+  }
   .responsive {
-    left: 85%;
+    left: 86%;
   }
   .houses_list_card {
     width: 100%;
