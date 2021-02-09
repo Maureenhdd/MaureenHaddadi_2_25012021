@@ -415,4 +415,8 @@ input[type="search"] {
   .houses_list_card {
     width: 100%;
   }
+
+  .houses_pop_card {
+    width: 100%;
+  }
 }
