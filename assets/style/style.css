@@ -144,6 +144,7 @@ input[type="search"] {
 .info_i {
   color: #0065fc;
   padding: 5px 10px;
+  margin: 0 10px 0 0;
   border: solid 1px #deebff;
   border-radius: 50%;
 }
@@ -190,9 +191,13 @@ input[type="search"] {
 
 .houses_list_card:hover,
 .houses_pop_card:hover {
-  color: #0065fc;
   transform: scale(1.1);
 }
+
+a:hover {
+  color: #0065fc;
+}
+
 .houses_card_img {
   width: 100%;
   object-fit: cover;
@@ -225,8 +230,9 @@ input[type="search"] {
 }
 
 .houses_title {
-  margin: 20px;
+  margin: 20px 0 10px 20px;
 }
+
 .more {
   text-decoration: none;
   color: black;
@@ -269,28 +275,6 @@ input[type="search"] {
   height: 110px;
   object-fit: cover;
   border-radius: 10px 0 0 10px;
-}
-
-.block_activities_content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.block_activities_card {
-  width: 23%;
-  border-radius: 15px;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
-}
-
-.block_activities_card_img {
-  width: 100%;
-  height: 50%;
-  object-fit: cover;
-}
-
-.block_activities_card:first-child {
-  height: 100%;
 }
 
 .footer {
@@ -376,12 +360,18 @@ input[type="search"] {
     left: 15px;
     top: 15px;
   }
+
   .border_blue {
     border-top: none;
     border-bottom: solid 2px #0065fc;
   }
+
+  .border_grey {
+    border-bottom: solid 2px #f2f2f2;
+  }
+
   .search_block {
-    margin: 50px 0;
+    margin: 20px 0;
   }
 
   .search_btn {
@@ -418,5 +408,8 @@ input[type="search"] {
 
   .houses_pop_card {
     width: 100%;
+  }
+  .houses_title {
+    margin: 0;
   }
 }
