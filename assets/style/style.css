@@ -179,7 +179,8 @@ body {
   transition: 0.5s;
 }
 
-.houses_list_card:hover {
+.houses_list_card:hover,
+.houses_pop_card:hover {
   color: #0065fc;
   transform: scale(1.1);
 }
@@ -242,6 +243,9 @@ body {
   padding: 5px;
   border-radius: 15px;
   width: 100%;
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
 }
 
 .houses_card_content {
@@ -319,6 +323,12 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
+  .footer_content {
+    flex-direction: column;
+  }
+  .footer_content_block {
+    margin: 15px 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -378,13 +388,6 @@ body {
   .houses,
   .houses_pop {
     width: 100%;
-  }
-
-  .footer_content {
-    flex-direction: column;
-  }
-  .footer_content_block {
-    margin: 15px 0;
   }
 }
 
