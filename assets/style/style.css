@@ -102,12 +102,14 @@ input[type="search"] {
 }
 
 .filter_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 10px;
   padding: 0 15px 0 0;
   border: solid 2px #f2f2f2;
-  border-radius: 20px;
+  border-radius: 30px;
   font-weight: 700;
-  padding-left: 10px;
   font-size: 15px;
   background: white;
   transition: 0.5s;
@@ -117,13 +119,16 @@ input[type="search"] {
   margin: 0 15px 0 0;
 }
 
-.filter_i {
+.filter_content .filter_i {
   background-color: #deebff;
-  padding: 10px 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   color: #0065fc;
-  position: relative;
-  right: 12px;
+  margin: -2px 15px -2px -4px;
   transition: 0.5s;
 }
 
@@ -191,7 +196,8 @@ input[type="search"] {
 }
 
 .houses_list_card:hover,
-.houses_pop_card:hover {
+.houses_pop_card:hover,
+.block_activities_card:hover {
   transform: scale(1.1);
 }
 
@@ -278,6 +284,66 @@ a:hover {
   border-radius: 10px 0 0 10px;
 }
 
+.block_activities_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 400px;
+}
+
+.block_activities_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 23%;
+  height: 100%;
+}
+
+.block_activities_card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  text-decoration: none;
+  color: black;
+}
+.block_activities_card:last-child {
+  margin: 0;
+}
+.block_img {
+  overflow: hidden;
+  height: 100%;
+}
+
+.block_activities_card_p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0 10px;
+  height: 60px;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+
+.block_activities_card_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.large {
+  height: 100%;
+}
+.medium {
+  height: calc(60% - 20px);
+}
+.small {
+  height: 40%;
+}
+
 .footer {
   background-color: #f2f2f2;
   padding: 20px 50px;
@@ -307,19 +373,25 @@ a:hover {
     width: 100%;
   }
   .houses,
-  .houses_pop {
-    width: 100%;
-    margin: 20px 0;
+  .houses_pop,
+  .footer,
+  .navbar_right_link {
+    margin-left: -20px;
+    margin-right: -20px;
+    width: auto;
+    margin-top: 20px;
   }
   .houses_list_card {
     width: 40%;
   }
+
   .houses_pop_bottom {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .footer_content {
+  .footer_content,
+  .block_activities_list {
     flex-direction: column;
   }
   .footer_content_block {
@@ -330,6 +402,22 @@ a:hover {
   }
   .houses_pop_card {
     width: 45%;
+  }
+  .block_activities_list {
+    height: 100%;
+  }
+
+  .block_activities_card_img {
+    height: 150px;
+  }
+  .block_activities_content {
+    width: 80%;
+    flex-direction: row;
+    margin: auto;
+  }
+  .block_activities_card,
+  .block_activities_card:last-child {
+    margin: 20px;
   }
 }
 
@@ -390,10 +478,6 @@ a:hover {
   .houses {
     background-color: white;
   }
-  .houses,
-  .houses_pop {
-    width: 100%;
-  }
 }
 
 @media (max-width: 576px) {
@@ -415,5 +499,13 @@ a:hover {
   }
   .houses_title {
     margin: 0;
+  }
+  .block_activities_content {
+    width: 100%;
+    flex-direction: column;
+  }
+  .block_activities_card,
+  .block_activities_card:last-child {
+    margin: 20px 0;
   }
 }
