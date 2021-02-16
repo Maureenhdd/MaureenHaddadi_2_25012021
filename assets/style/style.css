@@ -8,7 +8,8 @@ body {
   margin: 0 20px;
 }
 
-.container {
+.container,
+header {
   width: 85%;
   margin: auto;
 }
@@ -21,7 +22,6 @@ body {
 .navbar_right_link,
 .navbar_right {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -304,7 +304,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
   transition: 0.5s;
   text-decoration: none;
@@ -332,7 +332,7 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px 10px 0 0;
+  border-radius: 20px 20px 0 0;
 }
 
 .large {
@@ -349,9 +349,6 @@ a:hover {
   background-color: #f2f2f2;
   padding: 20px 50px;
   margin-top: 90px;
-}
-
-.footer_content {
   display: flex;
   justify-content: space-between;
   width: 75%;
@@ -391,10 +388,11 @@ a:hover {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .footer_content,
+  .footer,
   .block_activities_list {
     flex-direction: column;
   }
+
   .footer_content_block {
     margin: 15px 0;
   }
@@ -418,13 +416,14 @@ a:hover {
   }
   .block_activities_card,
   .block_activities_card:last-child {
-    margin: 20px;
+    margin: 10px;
   }
 }
 
 @media (max-width: 768px) {
   .navbar,
-  .container {
+  .container,
+  .header {
     width: 100%;
   }
   .navbar_right {
@@ -445,10 +444,7 @@ a:hover {
   }
   .navbar_left {
     position: absolute;
-    display: block;
-    height: 60px;
     left: 15px;
-    top: 15px;
   }
 
   .border_blue {
@@ -479,6 +475,19 @@ a:hover {
   .houses {
     background-color: white;
   }
+
+  .houses_card_img {
+    height: 130px;
+  }
+
+  .houses_pop_card,
+  .block_activities_card,
+  .block_activities_card:last-child {
+    margin: 10px 0;
+  }
+  .footer {
+    padding: 20px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -491,22 +500,16 @@ a:hover {
   .responsive {
     left: 86%;
   }
-  .houses_list_card {
-    width: 100%;
-  }
-
-  .houses_pop_card {
-    width: 100%;
-  }
   .houses_title {
     margin: 0;
+  }
+  .houses_pop_card,
+  .houses_list_card {
+    width: 100%;
+    margin: 8px 0;
   }
   .block_activities_content {
     width: 100%;
     flex-direction: column;
-  }
-  .block_activities_card,
-  .block_activities_card:last-child {
-    margin: 20px 0;
   }
 }
