@@ -483,8 +483,9 @@ a:hover {
   .houses_pop_card,
   .block_activities_card,
   .block_activities_card:last-child {
-    margin: 10px 0;
+    margin: 10px;
   }
+
   .footer {
     padding: 20px;
   }
