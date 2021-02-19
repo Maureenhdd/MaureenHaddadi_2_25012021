@@ -133,7 +133,7 @@ input[type="search"] {
 }
 
 .filter_content:hover .filter_i {
-  transform: rotate(360deg) scale(1.5);
+  transform: rotate(360deg) scale(1.2);
   background-color: #0065fc;
   color: white;
 }
@@ -310,9 +310,7 @@ a:hover {
   text-decoration: none;
   color: black;
 }
-.block_activities_card:last-child {
-  margin: 0;
-}
+
 .block_img {
   overflow: hidden;
   height: 100%;
@@ -491,12 +489,6 @@ a:hover {
     border-radius: 0;
   }
 
-  .houses_pop_card,
-  .block_activities_card,
-  .block_activities_card:last-child {
-    margin: 10px 0;
-  }
-
   .footer {
     padding: 20px;
   }
@@ -523,5 +515,10 @@ a:hover {
   .block_activities_content {
     width: 100%;
     flex-direction: column;
+  }
+  .houses_pop_card,
+  .block_activities_card,
+  .block_activities_card:last-child {
+    margin: 10px 0;
   }
 }
