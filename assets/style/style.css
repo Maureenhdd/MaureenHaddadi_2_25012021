@@ -8,12 +8,16 @@ body {
   margin: 0 20px;
 }
 
+h2 {
+  font-size: 18px;
+}
+
 .container,
 header {
   width: 85%;
   margin: auto;
 }
-
+/* HEADER */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -58,6 +62,8 @@ header {
   font-size: 20px;
 }
 
+/* INPUT SEARCH */
+
 .search_block {
   display: flex;
   margin: 25px 0;
@@ -94,6 +100,8 @@ input[type="search"] {
 .responsive {
   display: none;
 }
+
+/* Filter Bloc  */
 
 .filter_block {
   display: flex;
@@ -154,6 +162,8 @@ input[type="search"] {
   border: solid 1px #deebff;
   border-radius: 50%;
 }
+
+/* HEBERGEMENTS */
 
 .block_houses {
   margin: 0 0 50px 0;
@@ -247,6 +257,7 @@ a:hover {
   margin: 20px;
   font-weight: 700;
 }
+/* HEBERGEMENTS POPULAIRES */
 
 .houses_pop_top {
   display: flex;
@@ -284,6 +295,8 @@ a:hover {
   object-fit: cover;
   border-radius: 10px 0 0 10px;
 }
+
+/* ACTIVITIES  */
 
 .block_activities_list {
   display: flex;
@@ -344,6 +357,8 @@ a:hover {
   height: 40%;
 }
 
+/* FOOTER */
+
 .footer {
   background-color: #f2f2f2;
   padding: 20px 50px;
@@ -366,6 +381,8 @@ a:hover {
   text-decoration: none;
   color: black;
 }
+
+/* RESPONSIVE */
 
 @media (max-width: 1024px) {
   .block_houses {
